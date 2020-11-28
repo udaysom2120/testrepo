@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.feedbackpage.MainActivity">
+
+
+    <TextView
+        android:id="@+id/TextView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/elevation"
+        android:fontFamily="serif"
+        android:gravity="center"
+
+        android:text="Your Feedback Is Important For Us!"
+        android:textSize="10pt"></TextView>
+
+
+    <EditText
+        android:id="@+id/EditText_Enter_your_Email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Please enter your email here(Optional)"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#445049"></EditText>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rateCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditText_FeedbackBody"
+        android:layout_width="fill_parent"
+        android:layout_height="136dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/elevation"
+        android:gravity="top|left"
+        android:hint="  Enter Your feedback"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textColorHighlight="#CFA4A4"
+        android:textColorHint="#445049"></EditText>
+
+    <CheckBox
+        android:id="@+id/CheckBoxResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Are you sure you want to submit? Check the box then!"></CheckBox>
+
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/elevation"
+        android:onClick="sendFeedback"
+        android:text="Submit"
+        tools:ignore="OnClick"></Button>
+
+
+</LinearLayout>
